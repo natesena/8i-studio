@@ -40,7 +40,7 @@ const StudioLocationFrame: React.FC<StudioLocationFrameProps> = ({
       </div>
       {locationButton && (
         <div className="mt-40">
-          <Button text={locationButton} />
+          <Button text={locationButton} isHomePage={false} />
         </div>
       )}
     </div>

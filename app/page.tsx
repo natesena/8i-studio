@@ -5,7 +5,7 @@ import Frame305 from "@/components/section/frame-305";
 import Frame306 from "@/components/section/frame-306";
 import Frame331 from "@/components/section/frame-331";
 import Hero from "@/components/section/hero";
-import R3FScene from "@/components/models/r3f-implementation";
+// import R3FScene from "@/components/models/r3f-implementation";
 import { Scene3D } from "@/components/models/Scene3D";
 import { useEffect, useState } from "react";
 

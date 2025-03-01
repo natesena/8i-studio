@@ -28,7 +28,7 @@ const StudioFrame: React.FC<StudioFrameProps> = ({
     <div className={`w-full ${backgroundColor} ${textColor} h-screen px-[1rem] md:px-[2rem] flex flex-col justify-center items- ${className}`}>
       {buttonPosition === "top" && (
         <div className="mb-10">
-          <Button text={buttonText} />
+          <Button text={buttonText} isHomePage={false} />
         </div>
       )}
       
@@ -43,13 +43,13 @@ const StudioFrame: React.FC<StudioFrameProps> = ({
 
       {buttonPosition === "center" && (
         <div className="my-10">
-          <Button text={buttonText} />
+          <Button text={buttonText} isHomePage={false} />
         </div>
       )}
 
       {buttonPosition === "bottom" && (
         <div className="mt-40 w-full flex items-center justify-center uppercase">
-          <Button text={buttonText} />
+          <Button text={buttonText} isHomePage={false} />
         </div>
       )}
     </div>

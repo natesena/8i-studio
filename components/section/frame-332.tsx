@@ -8,7 +8,7 @@ const Frame332 = () => {
       <div className="min-h-[30rem] container grid grid-cols-3">
       {
         [1, 2, 3, 4, 5, 6].map((i) => (
-          <div className="flex items-center justify-center text-4xl font-[600]">
+          <div key={i} className="flex items-center justify-center text-4xl font-[600]">
             Seb Webber
           </div>
         ))

@@ -9,10 +9,34 @@ Title: Just People
 
 import React, { useRef, useEffect } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
+import * as THREE from "three";
 
-export function Model(props) {
-  const group = useRef(null)
-  const { nodes, materials, animations } = useGLTF('/models/Just People 3D Model.glb')
+// Define a more specific type for the nodes
+type GLTFNodes = {
+  _rootJoint: THREE.Bone;
+  [key: string]: THREE.Object3D & {
+    geometry?: THREE.BufferGeometry;
+    material?: THREE.Material | THREE.Material[];
+    skeleton?: any;
+  };
+};
+
+type GLTFResult = {
+  nodes: GLTFNodes;
+  materials: {
+    [key: string]: THREE.Material;
+  };
+  animations: THREE.AnimationClip[];
+};
+
+// Define props type
+type ModelProps = {
+  [key: string]: any;
+};
+
+export function Model(props: ModelProps) {
+  const group = useRef<THREE.Group>(null)
+  const { nodes, materials, animations } = useGLTF('/models/Just People 3D Model.glb') as unknown as GLTFResult;
   const { actions } = useAnimations(animations, group)
 
   useEffect(() => {
@@ -23,7 +47,7 @@ export function Model(props) {
     Object.values(actions).forEach((action) => {
       if (action) {
         action.reset().play()
-        action.setLoop(2201) // THREE.LoopRepeat
+        action.setLoop(2201, 2) // THREE.LoopRepeat
         action.clampWhenFinished = false
       }
     })
