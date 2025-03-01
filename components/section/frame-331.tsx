@@ -51,7 +51,7 @@ const Frame331: React.FC<Frame331Props> = ({ onNavigate }) => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full min-h-screen flex flex-col lg:flex-row text-white items-center justify-between gap-8 py-12">
       <div className="absolute top-12 right-12">
-        <Button text="back" onClick={() => onNavigate("hero")} isHomePage={false} />
+        <Button text="back" onClick={() => onNavigate("hero")} />
       </div>
       {/* Main content area */}
       <motion.div
@@ -65,7 +65,7 @@ const Frame331: React.FC<Frame331Props> = ({ onNavigate }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Button text="DIRECTORS" onClick={() => onNavigate("directors")} isHomePage={false} />
+          <Button text="DIRECTORS" onClick={() => onNavigate("directors")} />
         </motion.div>
 
         <motion.p

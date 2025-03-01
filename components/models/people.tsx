@@ -41,7 +41,6 @@ export function Model(props: ModelProps) {
 
   useEffect(() => {
     // Log available animations
-    console.log('Available animations:', Object.keys(actions))
     
     // Play all animations
     Object.values(actions).forEach((action) => {

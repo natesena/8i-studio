@@ -14,7 +14,7 @@ const Button = ({ text, onClick, color = 'primary', isHomePage }: ButtonProps) =
   // Use pathname to determine if we're on the homepage
   const pathname = usePathname();
   const isHome = isHomePage !== undefined ? isHomePage : pathname === '/';
-  
+
   // Define color schemes
   const colorSchemes = {
     primary: {

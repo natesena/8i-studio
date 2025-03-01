@@ -36,7 +36,7 @@ const Frame304: React.FC<Frame304Props> = ({ onNavigate }) => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center items-center relative w-full min-h-screen py-12">
        <div className="absolute top-12 right-12">
-        <Button text="back" onClick={() => onNavigate("hero")} isHomePage={false} />
+        <Button text="back" onClick={() => onNavigate("hero")}  />
         </div>
       <motion.div 
         className="flex flex-col lg:flex-row text-white items-start justify-between gap-8 w-full"
@@ -53,7 +53,7 @@ const Frame304: React.FC<Frame304Props> = ({ onNavigate }) => {
           <Button 
             text="VIRTUAL PRODUCTION" 
             onClick={() => onNavigate('virtual-production')}
-            isHomePage={false}
+            // isHomePage={false}
           />
           
           <motion.div 

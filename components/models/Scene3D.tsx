@@ -145,7 +145,7 @@ export function Scene3D() {
           <CameraAnimator activeSection={activeSection} />
           
           {/* Environment */}
-          <Environment preset="city" />
+          {/* <Environment preset="city" /> */}
         </Suspense>
       </Canvas>
     </div>
