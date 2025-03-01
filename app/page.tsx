@@ -11,7 +11,6 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("hero");
-
   
   useEffect(() => {
     // Set initial section based on hash if present
