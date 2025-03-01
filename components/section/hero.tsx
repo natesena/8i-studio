@@ -27,7 +27,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       <div className="relative w-[35rem] flex flex-col justify-center items-center gap-4 pointer-events-auto">
         <button onClick={() => onNavigate("hero")}>
           <Image
-            src="/img/Kartel UI Vector.png"
+            src="/img/logo.png"
             alt="Center Image"
             width={100}
             height={20}

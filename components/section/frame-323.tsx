@@ -3,7 +3,7 @@ import Image from "next/image";
 const partners = [
   {
     name: "AL Talent Marketplace",
-    img: "/img/KARTEL AI.png",
+    img: "/img/kartel.png",
   },
   {
     name: "Creator Economy",
@@ -15,7 +15,7 @@ const partners = [
   },
   {
     name: "Digital Likeness",
-    img: "/img/Spatial Studio.png",
+    img: "/img/digital.png",
   },
   {
     name: "Virtual Production",
