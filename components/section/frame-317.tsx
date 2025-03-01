@@ -2,7 +2,7 @@ import React from "react";
 
 const Frame317 = () => {
   return (
-    <div className="w-full border border-black bg-neutral-100 h-screen px-[1rem] md:px-[2rem] flex justify-between items-center">
+    <div className="w-full bg-neutral-100 h-screen px-[1rem] md:px-[2rem] flex justify-between items-center">
       <div>
         <h1 className="text-4xl font-[600]">Creator Network</h1>
         <h1 className="mt-2 text-xl font-[600]">
