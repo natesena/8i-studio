@@ -113,7 +113,7 @@ const Frame331: React.FC<Frame331Props> = ({ onNavigate }) => {
               x: 5,
             }}
             className="cursor-pointer transition-all duration-300"
-            onClick={() => onNavigate(name.toLowerCase().replace(/\s+/g, "-"))}
+            // onClick={() => onNavigate(name.toLowerCase().replace(/\s+/g, "-"))}
           >
             <p>{name}</p>
             <motion.div

@@ -10,14 +10,14 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
   return (
     <div className="w-full h-screen relative flex bg-transparent text-white items-center justify-center select-none">
       {/* Top button */}
-      <div className="absolute top-8 sm:top-20 pointer-events-auto">
+      <div className="absolute top-20 sm:top-12 pointer-events-auto">
         {/* <div onClick={() =  > onNavigate("ai-artists")}> */}
           <Button text="AI ARTISTS" onClick={() => onNavigate("ai-artists")} isHomePage={true} />
         {/* </div> */}
       </div>
 
       {/* Left button */}
-      <div className="absolute left-8 sm:left-20 pointer-events-auto">
+      <div className="absolute left-8 sm:left-12 pointer-events-auto">
         {/* <div onClick={() => onNavigate("virtual-production")}> */}
           <Button text="VIRTUAL PRODUCTION" onClick={() => onNavigate("virtual-production")} isHomePage={true} />
         {/* </div> */}
@@ -43,14 +43,14 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       </div>
 
       {/* Right button */}
-      <div className="absolute right-8 sm:right-20 pointer-events-auto">
+      <div className="absolute right-8 sm:right-12 pointer-events-auto">
         {/* <div onClick={() => onNavigate("generative-production")}> */}
           <Button text="GENERATIVE PRODUCTION" onClick={() => onNavigate("generative-production")} isHomePage={true} />
         {/* </div> */}
       </div>
 
       {/* Bottom button */}
-      <div className="absolute bottom-8 sm:bottom-20 pointer-events-auto">
+      <div className="absolute bottom-20 sm:bottom-12 pointer-events-auto">
         {/* <div onClick={() => onNavigate("directors")}> */}
           <Button text="DIRECTORS" onClick={() => onNavigate("directors")} isHomePage={true} />
         {/* </div> */}

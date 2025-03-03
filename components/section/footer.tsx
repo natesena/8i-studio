@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="fixed z-100 text-white bg-neutral-900 px-6 py-1 rounded-md bottom-2 left-1/2 transform -translate-x-1/2">
+    <div className="fixed z-100 text-white bg-neutral- px-6 py-1 rounded-md bottom-2 left-1/2 transform -translate-x-1/2">
       <h1 className="text-md text-center">
         <Link href="/studios" className="hover:underline">
           Studios

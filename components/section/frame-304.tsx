@@ -67,7 +67,7 @@ const Frame304: React.FC<Frame304Props> = ({ onNavigate }) => {
                 key={i} 
                 // variants={item}
                 className="hover:text-[#40FD8C] cursor-pointer transition-colors duration-300"
-                onClick={() => onNavigate(item.toLowerCase().replace(/\s+/g, '-'))}
+                // onClick={() => onNavigate(item.toLowerCase().replace(/\s+/g, '-'))}
               >
                 {item}
               </motion.p>
