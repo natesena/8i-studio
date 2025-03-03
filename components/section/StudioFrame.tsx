@@ -33,7 +33,7 @@ const StudioFrame: React.FC<StudioFrameProps> = ({
       )}
       
       <div>
-        <h1 className={`${titleSize} font-[600]`}>{title}</h1>
+        <h1 className={`text-3xl sm:text-4xl md:text-5xl`}>{title}</h1>
         <ul className="list-disc ml-10 font-[600]">
           {infoList.map((info, i) => (
             <li key={i} className={listItemSize}>{info}</li>

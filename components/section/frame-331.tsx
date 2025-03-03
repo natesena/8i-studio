@@ -49,7 +49,7 @@ const Frame331: React.FC<Frame331Props> = ({ onNavigate }) => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full min-h-screen flex flex-col lg:flex-row text-white items-center justify-between gap-8 py-12">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full min-h-screen flex flex-col lg:flex-row text-white items-center justify-center md:justify-between gap-8 py-12">
       <div className="absolute top-12 right-12">
         <Button text="back" onClick={() => onNavigate("hero")} />
       </div>
@@ -95,7 +95,7 @@ const Frame331: React.FC<Frame331Props> = ({ onNavigate }) => {
 
       {/* Director names column */}
       <motion.div
-        className="text-center flex flex-col gap-4 text-xl sm:text-2xl md:text-3xl mt-8 lg:mt-0"
+        className="text-center grid grid-cols-2 md:flex flex-col gap-4 text-xl sm:text-2xl md:text-3xl mt-8 lg:mt-0"
         initial={{ opacity: 0, x: 40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}

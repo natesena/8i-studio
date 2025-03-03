@@ -57,7 +57,7 @@ const ProductionString: React.FC<ProductionStringProps> = ({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-3xl sm:text-3xl md:text-4xl font-[600] mb-2">{title}</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-[600] mb-2">{title}</h1>
         <p className="text-lg sm:text-xl font-[600] lg:text-right">
           {subtitle}
         </p>

@@ -48,7 +48,7 @@ const Button = ({ text, onClick, color = 'primary', isHomePage }: ButtonProps) =
   return (
     <motion.button
       onClick={onClick}
-      className="px-6 py-3 rounded-lg bg-white/10 font-medium relative overflow-hidden"
+      className="px-4 md:px-6 py-1 md:py-3 rounded-md md:rounded-lg bg-white/10 font-medium relative overflow-hidden"
       style={{ 
         border: `1px solid #40FD8C`,
         color: isHome ? '#fff' : '#000',
@@ -75,7 +75,7 @@ const Button = ({ text, onClick, color = 'primary', isHomePage }: ButtonProps) =
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.1, duration: 0.2 }}
-        className={`relative z-10 text-xl font-[600] ${isHome ? 'text-white' : 'text-black'}`}
+        className={`relative z-10 text-sm md:text-xl font-[600] ${isHome ? 'text-white' : 'text-black'}`}
       >
         {text}
       </motion.span>

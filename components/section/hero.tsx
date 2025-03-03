@@ -17,14 +17,14 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       </div>
 
       {/* Left button */}
-      <div className="absolute left-8 sm:left-12 pointer-events-auto">
+      <div className="absolute left-4 sm:left-12 pointer-events-auto">
         {/* <div onClick={() => onNavigate("virtual-production")}> */}
           <Button text="VIRTUAL PRODUCTION" onClick={() => onNavigate("virtual-production")} isHomePage={true} />
         {/* </div> */}
       </div>
 
       {/* Center image */}
-      <div className="relative w-[35rem] flex flex-col justify-center items-center gap-4 pointer-events-auto">
+      <div className="relative bottom-[5rem] md:bottom-0 w-[35rem] flex flex-col justify-center items-center gap-4 pointer-events-auto">
         <button onClick={() => onNavigate("hero")}>
           <Image
             src="/img/logo.png"
@@ -43,7 +43,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       </div>
 
       {/* Right button */}
-      <div className="absolute right-8 sm:right-12 pointer-events-auto">
+      <div className="absolute right-4 sm:right-12 pointer-events-auto">
         {/* <div onClick={() => onNavigate("generative-production")}> */}
           <Button text="GENERATIVE PRODUCTION" onClick={() => onNavigate("generative-production")} isHomePage={true} />
         {/* </div> */}
