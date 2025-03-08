@@ -1,53 +1,52 @@
-import Frame307 from "@/components/section/frame-307";
-import Frame310 from "@/components/section/frame-310";
-import Frame317 from "@/components/section/frame-317";
-import Frame318 from "@/components/section/frame-318";
-import Frame319 from "@/components/section/frame-319";
-import Frame320 from "@/components/section/frame-320";
-import Frame323 from "@/components/section/frame-323";
-import Frame327 from "@/components/section/frame-327";
-import Frame328 from "@/components/section/frame-328";
-import Frame329 from "@/components/section/frame-329";
-import Frame332 from "@/components/section/frame-332";
-import Frame311 from "@/components/section/frame311";
-import Frame312 from "@/components/section/frame312";
-import Frame313 from "@/components/section/frame313";
-import Frame314 from "@/components/section/frame314";
-import Frame315 from "@/components/section/frame315";
-import Frame316 from "@/components/section/frame316";
-import Frame324 from "@/components/section/frame324";
-import Frame325 from "@/components/section/frame325";
-import Frame326 from "@/components/section/frame326";
-import React from "react";
+import OpenSource from "@/components/section/open-source";
+import StudioNetwork from "@/components/section/studio-network";
+import CreatorNetwork from "@/components/section/creator-network";
+import StudioLocationNY from "@/components/section/studio-location-ny";
+import StudioLighthouseVenice from "@/components/section/studio-lighthouse-venice";
+import StudioLighthouseLondon from "@/components/section/studio-lighthouse-london";
+import Partners from "@/components/section/partners";
+import PostProduction from "@/components/section/post-production";
+import VolumetricGuassianSplat from "@/components/section/volumetric-guassian";
+import VolumetricLibrary from "@/components/section/volumetric-library";
+import AboutUs from "@/components/section/about-us";
+import ZeroSpace from "@/components/section/zero-space";
+import WsaInfo from "@/components/section/wsa-info";
+import SpatialStudioInfo from "@/components/section/spatial-studio";
+import VolucapMaxStudio from "@/components/section/volucap-max-studio";
+import VolumetricStudioFeatures from "@/components/section/volumetric-studio-features";
+import HumanSynthesisStudio from "@/components/section/human-synthesis-studio";
+import TalentCapture from "@/components/section/talent-capture";
+import ICMXVolumeCapture from "@/components/section/icmx";
+import GenerativeProductionService from "@/components/section/generative-production-service";
 // RMC  Softbank -IMAGICA Shinagawa Production Center
 const Page = () => {
   return (
-    <div className="bg-white p-[1rem] md:p-[2rem] flex flex-col gap-[2rem]">
-      <Frame310 />
-      <Frame311 />
-      <Frame312 />
-      <Frame313 />
-      <Frame314 />
-      <Frame315 />
-      <Frame316 />
+    <div className="bg-white p-[1rem] md:p-[2rem] flex flex-col gap-[2rem] max-w-screen overflow-x-hidden">
+      <StudioNetwork />
+      <ZeroSpace />
+      <WsaInfo />
+      <SpatialStudioInfo />
+      <VolucapMaxStudio />
+      <VolumetricStudioFeatures />
+      <HumanSynthesisStudio />
 
       {/* Default Frame324 */}
-      <Frame324 />
-      <Frame325 />
-      <Frame326 />
-      <Frame327 />
+      <TalentCapture />
+      <ICMXVolumeCapture />
+      <GenerativeProductionService />
+      <PostProduction />
 
-      <Frame317 />
-      <Frame318 />
-      <Frame319 />
-      <Frame320 />
+      <CreatorNetwork />
+      <StudioLocationNY />
+      <StudioLighthouseVenice />
+      <StudioLighthouseLondon />
 
-      <Frame332 />
-      <Frame323 />
+      <AboutUs />
+      <Partners />
 
-      <Frame307 />
-      <Frame328 />
-      <Frame329 />
+      <OpenSource />
+      <VolumetricGuassianSplat />
+      <VolumetricLibrary />
     </div>
   );
 };

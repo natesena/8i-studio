@@ -19,7 +19,16 @@ module.exports = {
         'extralight': 200,
         'light': 300,
         'black': 900,
-      }
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+      },
+      animation: {
+        'float': 'float 3s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

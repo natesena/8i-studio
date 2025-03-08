@@ -95,14 +95,13 @@ export function Scene3D() {
   }, []);
 
   return (
-    <div className="w-full h-screen relative bg-neutral-900 pointer-events-auto">
+    <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, height: '100%' }} className="bg-neutral-900 pointer-events-auto">
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/60 pointer-events-none z-10" />
       
       <Canvas 
         shadows 
-        className="relative z-0"
-        style={{ pointerEvents: 'all' }}
+        style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', touchAction: 'none' }}
       >
         <Suspense fallback={null}>
           {/* Model */}
