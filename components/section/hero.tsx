@@ -10,7 +10,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
   return (
     <div className="w-full h-screen relative flex bg-transparent text-white items-center justify-center select-none">
       {/* Top button */}
-      <div className="absolute top-20 sm:top-12 pointer-events-auto">
+      <div className="absolute top-32 sm:top-12 pointer-events-auto">
         <Button
           text="AI ARTISTS"
           onClick={() => onNavigate("ai-artists")}
@@ -30,7 +30,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       {/* Center image */}
       <div className="relative bottom-[5rem] md:bottom-0 w-[35rem] flex flex-col justify-center items-center gap-4 pointer-events-auto">
         <button onClick={() => onNavigate("hero")}>
-          <h1 className="inter flex text-5xl md:text-7xl font-[900] text-[#40FD8C]">
+          <h1 className="inter flex text-4xl md:text-7xl font-[900] text-[#40FD8C]">
             KARTEL <span className="ml-4 font-[300] text-white"> STUDIO</span>
           </h1>
         </button>
@@ -51,7 +51,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       </div>
 
       {/* Bottom button */}
-      <div className="absolute bottom-20 sm:bottom-12 pointer-events-auto">
+      <div className="absolute bottom-32 sm:bottom-12 pointer-events-auto">
         <Button
           text="DIRECTORS"
           onClick={() => onNavigate("directors")}

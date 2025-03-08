@@ -9,7 +9,7 @@ interface VirtualProductionProps {
 const VirtualProduction: React.FC<VirtualProductionProps> = ({ onNavigate }) => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center items-center relative w-full min-h-screen py-12">
-      <div className="absolute top-12 right-12">
+      <div className="absolute top-8 md:top-12 right-8 md:right-12">
         <Button text="back" onClick={() => onNavigate("hero")} />
       </div>
       <motion.div

@@ -37,6 +37,7 @@ body {
   place-items: center;
   height: fit-content;
   grid-template-columns: minmax(0, 1fr);
+  padding: 0;
 }
 
 .slider-container {
@@ -50,6 +51,7 @@ body {
   display: flex;
   gap: 1px;
   padding: 1px;
+  /* margin: 0; */
 }
 
 .slider-container {

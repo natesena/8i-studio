@@ -18,7 +18,7 @@ const GenerativeProduction: React.FC<GenerativeProductionProps> = ({
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="absolute top-12 right-12">
+        <div className="absolute top-8 md:top-12 right-8 md:right-12">
           <Button text="back" onClick={() => onNavigate("hero")} />
         </div>
         <div className="flex flex-col lg:flex-row text-white items-start justify-between gap-8 w-full mt-12">

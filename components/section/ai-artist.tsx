@@ -39,7 +39,7 @@ const AiArtist: React.FC<AiArtistProps> = ({ onNavigate }) => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full min-h-screen flex flex-col lg:flex-row text-white items-center justify-center md:justify-between gap-8 py-12">
-      <div className="absolute top-12 right-12">
+      <div className="absolute top-8 md:top-12 right-8 md:right-12">
         <Button text="back" onClick={() => onNavigate("hero")} />
       </div>
       {/* Main content area */}
