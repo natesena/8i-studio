@@ -14,6 +14,7 @@ const Footer = () => {
         <Link href="/open-source" className="hover:underline">
           Open - Source
         </Link>
+        
         <span className="mx-6">|</span>
         <Link href="/ai-workflows" className="hover:underline">
           AI Workflows
