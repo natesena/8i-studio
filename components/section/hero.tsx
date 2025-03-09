@@ -30,9 +30,8 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       {/* Center image */}
       <div className="relative bottom-[5rem] md:bottom-0 w-[35rem] flex flex-col justify-center items-center gap-4 pointer-events-auto">
         <button onClick={() => onNavigate("hero")}>
-          <h1 className="inter flex text-4xl md:text-7xl font-[900] text-[#40FD8C]">
-            KARTEL <span className="ml-4 font-[300] text-white"> STUDIO</span>
-          </h1>
+          {/* This has been hacked in, be sure to adjust the size spacing with regard to other elements  */}
+          <img src="/kartel-studio.svg" width={150} />
         </button>
         <h1 className="mt-4 text-md">
           New York <span className="mx-6">|</span> Los Angles{" "}
