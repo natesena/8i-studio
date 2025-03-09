@@ -10,7 +10,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
   return (
     <div className="w-full h-screen relative flex bg-transparent text-white items-center justify-center select-none">
       {/* Top button */}
-      <div className="absolute top-32 sm:top-12 pointer-events-auto">
+      <div className="absolute top-20 sm:top-12 pointer-events-auto">
         <Button
           text="AI ARTISTS"
           onClick={() => onNavigate("ai-artists")}
@@ -19,7 +19,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       </div>
 
       {/* Left button */}
-      <div className="absolute left-4 sm:left-12 pointer-events-auto">
+      <div className="absolute mt-20 md:mt-0 left-4 sm:left-12 pointer-events-auto">
         <Button
           text="VIRTUAL PRODUCTION"
           onClick={() => onNavigate("virtual-production")}
@@ -41,7 +41,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       </div>
 
       {/* Right button */}
-      <div className="absolute right-4 sm:right-12 pointer-events-auto">
+      <div className="absolute right-4 mt-20 md:mt-0 sm:right-12 pointer-events-auto">
         <Button
           text="GENERATIVE PRODUCTION"
           onClick={() => onNavigate("generative-production")}
