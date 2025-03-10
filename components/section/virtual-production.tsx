@@ -29,7 +29,7 @@ const VirtualProduction: React.FC<VirtualProductionProps> = ({ onNavigate }) => 
             onClick={() => onNavigate("virtual-production")}
           />
 
-          <div className="max-w-3xl md:h-full h-fit w-screen">
+          <div className="max-w-3xl md:h-full h-fit w-full">
             <div className="wrapper">
               <div className="slider-container">
                 {virtualProduction.map((project, index) => (
