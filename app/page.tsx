@@ -44,14 +44,14 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col min-h-[100vh] h-full max-w-screen overflow-x-hidden bg-neutral-900">
+    <div className="fixed inset-0 overflow-hidden bg-neutral-900">
       {/* 3D Scene Layer - Fixed full-height background */}
       <div className="fixed inset-0 w-full h-full z-0">
         <Scene3D />
       </div>
 
       {/* UI Layer - Scrollable content */}
-      <main className="relative flex-1 w  -full z-10">
+      <main className="relative w-full h-full z-10">
         {activeSection === "hero" && <Hero onNavigate={handleNavigation} />}
         {activeSection === "virtual-production" && (
           <VirtualProduction onNavigate={handleNavigation} />
