@@ -31,7 +31,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       <div className="relative bottom-[5rem] md:bottom-0 w-[35rem] flex flex-col justify-center items-center gap-4 pointer-events-auto">
         <button className="cursor-pointer" onClick={() => onNavigate("hero")}>
           {/* This has been hacked in, be sure to adjust the size spacing with regard to other elements  */}
-          <img src="/Kartel-Studio.svg" width={150} />
+          <img src="/kartel-studio.svg" width={150} />
         </button>
         <h1 className="mt-4 text-md">
           New York <span className="mx-6">|</span> Los Angles{" "}
