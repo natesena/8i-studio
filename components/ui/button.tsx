@@ -48,7 +48,7 @@ const Button = ({ text, onClick, color = 'primary', isHomePage }: ButtonProps) =
   return (
     <motion.button
       onClick={onClick}
-      className="px-4 md:px-6 py-1 md:py-3 rounded-md md:rounded-lg bg-white/10 font-medium relative overflow-hidden"
+      className="px-4 md:px-6 py-1 md:py-3 rounded-md md:rounded-lg bg-white/10 font-medium relative overflow-hidden cursor-pointer"
       style={{ 
         border: `1px solid #40FD8C`,
         color: isHome ? '#fff' : '#000',

@@ -19,7 +19,7 @@ const VirtualProduction: React.FC<VirtualProductionProps> = ({ onNavigate }) => 
         transition={{ duration: 0.6 }}
       >
         <motion.div
-          className="flex flex-col items-start justify-end gap-6 w-full lg:w-auto order-2 lg:order-1 mt-8 lg:mt-0"
+          className="flex flex-col items-start justify-end gap-6 w-full lg:w-auto order-1 lg:order-1 mt-8 lg:mt-0"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
@@ -29,7 +29,7 @@ const VirtualProduction: React.FC<VirtualProductionProps> = ({ onNavigate }) => 
             onClick={() => onNavigate("virtual-production")}
           />
 
-          <div className="max-w-3xl md:h-full h-fit w-screen">
+          <div className="max-w-3xl md:h-full h-fit w-full">
             <div className="wrapper">
               <div className="slider-container">
                 {virtualProduction.map((project, index) => (
@@ -47,7 +47,7 @@ const VirtualProduction: React.FC<VirtualProductionProps> = ({ onNavigate }) => 
         </motion.div>
 
         <motion.div
-          className="w-full lg:w-7/12 order-1 lg:order-2"
+          className="w-full lg:w-7/12 order-2 lg:order-2"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}

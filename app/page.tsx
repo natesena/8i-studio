@@ -51,7 +51,7 @@ export default function Home() {
       </div>
 
       {/* UI Layer - Scrollable content */}
-      <main className="relative flex-1 w  -full z-10">
+      <main className="relative w-full h-full z-10">
         {activeSection === "hero" && <Hero onNavigate={handleNavigation} />}
         {activeSection === "virtual-production" && (
           <VirtualProduction onNavigate={handleNavigation} />
