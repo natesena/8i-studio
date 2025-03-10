@@ -11,7 +11,7 @@ type SlideProps = {
 const Slide = ({ src, title, description, type = "image", bg, textColor }: SlideProps) => {
   const mediaStyles = "w-full h-full object-cover absolute inset-0";
   const containerStyles =
-    `slide ${bg || "bg-neutral-500/30"} group relative overflow-hidden transition-all duration-500 ease-out hover:flex-[4]`;
+    `slide ${bg || "bg-neutral-500/10"} group relative overflow-hidden transition-all duration-500 ease-out hover:flex-[4]`;
   const titleStyles =
     `slide-title text-xl uppercase tracking-wider font-[900] absolute inset-0 flex items-center justify-center group-hover:opacity-0 transition-opacity duration-300 ${textColor || "text-white"}`;
   const isVideo = type === "video";

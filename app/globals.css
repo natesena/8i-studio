@@ -1,31 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
 
 @font-face {
-  font-family: 'Beiruti';
-  src: url('/font/Beiruti-Black.ttf') format('truetype');
+  font-family: "Beiruti";
+  src: url("/font/Beiruti-Black.ttf") format("truetype");
   /* font-weight: 900; */
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Beiruti';
-  src: url('/font/Beiruti-Light.ttf') format('truetype');
+  font-family: "Beiruti";
+  src: url("/font/Beiruti-Light.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Beiruti';
-  src: url('/font/Beiruti-ExtraLight.ttf') format('truetype');
+  font-family: "Beiruti";
+  src: url("/font/Beiruti-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 
 body {
-  font-family: 'Beiruti', sans-serif;
+  font-family: "Beiruti", sans-serif;
 }
 
 .inter {
@@ -101,7 +102,7 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   flex: 1;
   transition: flex 600ms cubic-bezier(0.22, 0.61, 0.36, 1);
 }
@@ -127,8 +128,12 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .slide-title {
@@ -157,7 +162,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
 }
 
 .slide-content h2 {
@@ -255,27 +264,24 @@ body {
   .slide:hover {
     flex: 3;
   }
-  
+
   .slide a {
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
     padding: 1rem 2rem;
     font-size: 1.2rem;
   }
-  
+
   .slide-title {
     writing-mode: horizontal-tb;
     transform: none;
   }
-  
+
   .slide:hover .slide-title,
   .slide:focus-within .slide-title {
     top: 1rem;
   }
 }
-
-
-
 
 /* Modern scroll bar styling */
 ::-webkit-scrollbar {
